@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:regular,italic,700)
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,regular,500,600,700,900)
+
+$index: calc(1vh + 1vw)
+$font-main: 'Mulish', sans-serif
+$font-logo: 'Lobster Two', cursive
+$logo-size: calc(var(--index) * .5)
+$main-color: #bc9667
+$second-color: #edeae3
+$text-color: #fff
+
+@import './blocks/header'
+
+*
+    box-sizing: border-box
+    scroll-padding-top: 4rem
+    scroll-behavior: smooth
+    list-style: none
+    text-decoration: none
+
+body
+    width: 100vw
+    height: 100vh
+    font-family: $font-main
+    font-size: calc(var(--index) * .8)
+    line-height: calc(var(--index) * 1.2)
+    background-image: url(../img/bg.png)
+    padding: 0
+    margin: 0
+
+.container
+    max-width: 88.125rem
+    margin: 0 auto
+    padding: 0 .9375rem
+    position: relative
+
+img
+    width: 100%
+    object-fit: cover
