@@ -32,8 +32,10 @@
         padding: 1rem
         transition: .3s
         transform: translate(-50% -50%)
+        z-index: 100
         &.active
             transform: translateX(0)
+
     &__burger_list
         display: flex
         flex-direction: column
@@ -100,6 +102,7 @@
         &__logo
             width: 5rem
             height: 4rem
+
         &__burger_active
             display: block
     .menu

@@ -34,6 +34,7 @@
   padding: 1rem;
   transition: 0.3s;
   transform: translate(-50% -50%);
+  z-index: 100;
 }
 .header__burger.active {
   transform: translateX(0);
@@ -129,6 +130,46 @@
     font-size: 1.5rem;
   }
 }
+.slogan {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+}
+.slogan__text {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slogan__title {
+  color: #edeae3;
+  font-family: "lobster two", cursive;
+  font-size: 10vw;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.slogan__subtitle {
+  width: 100%;
+  color: #edeae3;
+  font-family: "lobster two", cursive;
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.slogan__img {
+  width: calc(var(--index) * 1.5);
+}
+
 * {
   box-sizing: border-box;
   scroll-padding-top: 4rem;
@@ -144,6 +185,7 @@ body {
   font-size: calc(var(--index) * 0.8);
   line-height: calc(var(--index) * 1.2);
   background-image: url(../img/bg.png);
+  background-size: cover;
   padding: 0;
   margin: 0;
 }
